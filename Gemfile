@@ -17,6 +17,10 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+# Use Sprockets to access Bootstrap
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+# Use Bootstrap for visual styles
+gem 'bootstrap', '~> 4.1.0'
 # Use jQuery for rails
 gem 'jquery-rails', '4.3.1'
 # Use Devise for user authentication
