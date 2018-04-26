@@ -9,31 +9,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+<body>
     <nav class="navbar navbar-light bg-light justify-content-between">
       <a class="navbar-brand">Rock Lobster</a>
+        
+        <!–– Search button ––>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-          <a href="/users/sign_in">
-            <button class="btn btn-success navbar-btn">
-             Login In
-            </button>
-          </a>
-          <a href="/users/sign_up">
-            <button class="btn btn-default">
-             Sign Up
-            </button>
-          </a>
+        <!–– Right side button ––>
+        <div class="nav navbar-nav navbar-right">
+          <%= link_to "Log In", new_user_session_path, class: "btn btn-success navbar-btn" %>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info navbar-btn" %>
+        </div>
     </nav>
     
-    
-    
-    
-    
-    
+
     
     <%= yield %>
-  </body>
+</body>
 </html>
