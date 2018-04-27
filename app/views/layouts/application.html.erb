@@ -11,7 +11,7 @@
 
 <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <a class="navbar-brand">Rock Lobster</a>
+      <%= link_to "Rock Lobster", root_path, class: "btn btn-info navbar-btn" %>
         
         <!–– Search button ––>
         <form class="form-inline">
@@ -20,8 +20,13 @@
         </form>
         <!–– Right side button ––>
         <div class="nav navbar-nav navbar-right">
-          <%= link_to "Log In", new_user_session_path, class: "btn btn-success navbar-btn" %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info navbar-btn" %>
+
+          <% if user_signed_in? %>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-warning navbar-btn" %>
+              <% else %>
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-success navbar-btn" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info navbar-btn" %>
+            <% end %>
         </div>
     </nav>
     
