@@ -25,6 +25,10 @@ gem 'bootstrap', '~> 4.1.0'
 gem 'jquery-rails', '4.3.1'
 # Use Devise for user authentication
 gem 'devise'
+# Use Fullcalendar gem for rendering calendars
+gem 'fullcalendar-rails'
+# Dependency for fullcalendar
+gem 'momentjs-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
