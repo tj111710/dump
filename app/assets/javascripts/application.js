@@ -11,32 +11,11 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require_tree .
 //= require jquery3
+//= require turbolinks
 //= require popper
 //= require bootstrap-sprockets
 //= require moment 
 //= require fullcalendar
-$(function() {
-$('#calendar').fullCalendar({
-    selectable:true,
-    selectHelper: true,
-    editable: true,
-    
-    header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-    },
-    
-    select: function(startDate, endDate) {
-      alert('selected ' + startDate.format() + ' to ' + endDate.format());
-    }
-    
-    
-    
-    
-});
-});
+//= require activestorage
+//= require_tree .
