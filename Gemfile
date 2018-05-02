@@ -23,6 +23,8 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 4.1.0'
 # Use jQuery for rails
 gem 'jquery-rails', '4.3.1'
+# Use Simple Form for forms
+gem 'simple_form'
 # Use Devise for user authentication
 gem 'devise'
 # Use Fullcalendar gem for rendering calendars
